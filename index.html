@@ -1,49 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Champagne Milionari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f5f2;
-      color: #333;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #bfa06a;
+
+    body {
+      font-family: 'Montserrat', sans-serif;
       color: white;
+      background-color: #000;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
       padding: 20px;
       text-align: center;
-      font-size: 2em;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+
+    nav a:hover {
+      color: #f0c040;
     }
-    footer {
-      background-color: #bfa06a;
-      color: white;
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1558640479-8247f2f779af');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about, .contact {
+      background-color: #111;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #f0c040;
+      color: #000;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .gallery img {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>Champagne Milionari</header>
 
-  <section>
-    <h1>Bienvenidos a Champagne Milionari</h1>
-    <p>Descubre la elegancia y el sabor único de nuestro champagne de alta gama.</p>
+  <header>
+    <h1>Champagne Milionari</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Lujo. Estilo. Distinción.</h2>
+    <p>Bienvenido a Champagne Milionari, donde cada copa celebra la grandeza.</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
   </section>
 
-  <footer>© 2025 Champagne Milionari</footer>
+  <section class="about" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una marca de champagne que representa lujo y exclusividad. Cada botella es creada para quienes viven sin límites y celebran cada momento con clase.</p>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <h2>Galería</h2>
+    <img src="https://images.unsplash.com/photo-1608198093002-ad4e0054844e" alt="Champagne 1">
+    <img src="https://images.unsplash.com/photo-1592842396211-08b0ef2ccf15" alt="Champagne 2">
+    <img src="https://images.unsplash.com/photo-1562183241-b937f3f1f289" alt="Champagne 3">
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres saber más o hacer un pedido? Escríbenos en nuestras redes o al correo:</p>
+    <p><strong>milionari@lujo.com</strong></p>
+    <a href="https://www.instagram.com/" class="btn" target="_blank">Instagram</a>
+  </section>
+
 </body>
 </html>
