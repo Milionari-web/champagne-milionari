@@ -2,155 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Champagne Milionari</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      background-color: #000;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
       color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
     }
-
-    nav a:hover {
-      color: #f0c040;
-    }
-
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1558640479-8247f2f779af');
+    header {
+      background: url('https://images.unsplash.com/photo-1569869942034-f03a1f60d5ec') no-repeat center center;
       background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      padding: 120px 20px;
       text-align: center;
-      padding: 0 20px;
     }
-
-    .hero h2 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    header h1 {
+      font-size: 50px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 10px #000;
+      color: gold;
     }
-
-    .hero p {
-      font-size: 1.2em;
-      max-width: 600px;
-    }
-
     section {
       padding: 60px 20px;
       text-align: center;
     }
-
-    .about, .contact {
+    section img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 16px;
+      margin: 30px 0;
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    }
+    .contacto {
       background-color: #111;
+      padding: 50px 20px;
     }
-
-    .gallery img {
-      width: 300px;
-      height: auto;
-      margin: 10px;
-      border-radius: 10px;
-    }
-
-    .btn {
-      padding: 10px 20px;
-      background-color: #f0c040;
-      color: #000;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      margin-top: 20px;
+    .whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    .btn:hover {
-      background-color: #fff;
-    }
-
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2em;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      .gallery img {
-        width: 90%;
-      }
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Champagne Milionari</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Sobre Nosotros</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<header>
+  <h1>Champagne Milionari</h1>
+</header>
 
-  <section class="hero" id="inicio">
-    <h2>Lujo. Estilo. Distinción.</h2>
-    <p>Bienvenido a Champagne Milionari, donde cada copa celebra la grandeza.</p>
-    <a href="#contacto" class="btn">Contáctanos</a>
-  </section>
+<section>
+  <h2>Un brindis con estilo</h2>
+  <p>Lujo, frescura y elegancia desde el corazón del viñedo hasta la playa.</p>
 
-  <section class="about" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una marca de champagne que representa lujo y exclusividad. Cada botella es creada para quienes viven sin límites y celebran cada momento con clase.</p>
-  </section>
+  <img src="https://media.istockphoto.com/id/184946701/es/foto/viñedo-en-verano.jpg" alt="Viñedo">
+  <img src="https://www.eluniversal.com.mx/resizer/F9z-tGLzGEppLuLBMu-SYi9m3ZM=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/VLMROEMNQJGHTFLL5H4W6R7SUA.jpg" alt="Brindis con champagne">
+  <img src="https://www.1zoom.me/big2/906/267727-alexfas01.jpg" alt="Vino sobre barril">
 
-  <section class="gallery" id="galeria">
-    <h2>Galería</h2>
-    <img src="https://images.unsplash.com/photo-1608198093002-ad4e0054844e" alt="Champagne 1">
-    <img src="https://images.unsplash.com/photo-1592842396211-08b0ef2ccf15" alt="Champagne 2">
-    <img src="https://images.unsplash.com/photo-1562183241-b937f3f1f289" alt="Champagne 3">
-  </section>
+</section>
 
-  <section class="contact" id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres saber más o hacer un pedido? Escríbenos en nuestras redes o al correo:</p>
-    <p><strong>milionari@lujo.com</strong></p>
-    <a href="https://www.instagram.com/" class="btn" target="_blank">Instagram</a>
-  </section>
+<section class="contacto">
+  <h2>Contáctanos</h2>
+  <p>¿Interesado en vivir la experiencia Milionari?</p>
+  <a class="whatsapp" href="https://wa.me/56931967509" target="_blank">📲 Escríbenos por WhatsApp</a>
+</section>
 
 </body>
 </html>
